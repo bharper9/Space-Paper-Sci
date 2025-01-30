@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d188650tgquu2"
-path="res://.godot/imported/SpaceEnemy1.png.png-6ad70de75be324cc796e50f2330e83f3.ctex"
+uid="uid://cq01awdhydea"
+path="res://.godot/imported/Space Background.png-ce7a209e41220ae793f35a986fae0554.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/SpaceEnemy1.png.png"
-dest_files=["res://.godot/imported/SpaceEnemy1.png.png-6ad70de75be324cc796e50f2330e83f3.ctex"]
+source_file="res://Art/Space Background.png"
+dest_files=["res://.godot/imported/Space Background.png-ce7a209e41220ae793f35a986fae0554.ctex"]
 
 [params]
 

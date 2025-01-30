@@ -1,13 +1,13 @@
 [gd_scene load_steps=19 format=3 uid="uid://cc2dnwpnend6d"]
 
 [ext_resource type="Script" path="res://MainGame.gd" id="1_ejur5"]
-[ext_resource type="Texture2D" uid="uid://b75wnod884xah" path="res://Art/New Piskel-1.png.png" id="2_8d2cv"]
-[ext_resource type="Texture2D" uid="uid://cq01awdhydea" path="res://Art/space121png (1).png" id="2_xr8i0"]
+[ext_resource type="Texture2D" uid="uid://b75wnod884xah" path="res://Art/Sword.png" id="2_8d2cv"]
+[ext_resource type="Texture2D" uid="uid://cq01awdhydea" path="res://Art/Space Background.png" id="2_xr8i0"]
 [ext_resource type="Texture2D" uid="uid://17bigpp2grm5" path="res://Art/SpaceMarine.png.png" id="2_yk2sl"]
 [ext_resource type="Texture2D" uid="uid://bnod550aq8hk7" path="res://Art/New Piskel-2.png.png" id="3_7054j"]
-[ext_resource type="Texture2D" uid="uid://d188650tgquu2" path="res://Art/SpaceEnemy1.png.png" id="3_knrkv"]
+[ext_resource type="Texture2D" uid="uid://d188650tgquu2" path="res://Art/RedEnemy.png" id="3_knrkv"]
 [ext_resource type="Texture2D" uid="uid://ymvo1lftrlhr" path="res://Art/New Piskel-3.png.png" id="4_rilh7"]
-[ext_resource type="Texture2D" uid="uid://btn8kvsufmt0c" path="res://Art/New Piskel-4.png.png" id="5_q34rh"]
+[ext_resource type="Texture2D" uid="uid://btn8kvsufmt0c" path="res://Art/Sword off.png" id="5_q34rh"]
 [ext_resource type="Texture2D" uid="uid://cbabfo3d0fe66" path="res://Art/New Piskel-5.png.png" id="6_y7p25"]
 [ext_resource type="Texture2D" uid="uid://dukj1eowb3wgh" path="res://Art/New Piskel-6.png.png" id="7_njr8n"]
 [ext_resource type="Texture2D" uid="uid://bmqbd8jg08m3e" path="res://Art/New Piskel-7.png.png" id="8_rdtx6"]
@@ -70,7 +70,7 @@ animations = [{
 "speed": 6.0
 }]
 
-[node name="Node2D" type="Node2D"]
+[node name="Hard Game" type="Node2D"]
 script = ExtResource("1_ejur5")
 
 [node name="background" type="Sprite2D" parent="."]

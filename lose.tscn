@@ -1,9 +1,9 @@
 [gd_scene load_steps=3 format=3 uid="uid://cdpm5d0lcia4j"]
 
 [ext_resource type="Script" path="res://defeat.gd" id="1_8csn4"]
-[ext_resource type="Texture2D" uid="uid://cq01awdhydea" path="res://Art/space121png (1).png" id="2_jdhvc"]
+[ext_resource type="Texture2D" uid="uid://cq01awdhydea" path="res://Art/Space Background.png" id="2_jdhvc"]
 
-[node name="Node2D" type="Node2D"]
+[node name="lose screen" type="Node2D"]
 script = ExtResource("1_8csn4")
 
 [node name="background" type="Sprite2D" parent="."]
@@ -18,7 +18,7 @@ offset_right = 551.0
 offset_bottom = 368.0
 text = "Exit"
 
-[node name="Label" type="Label" parent="."]
+[node name="Lose text" type="Label" parent="."]
 offset_left = 300.0
 offset_top = 219.0
 offset_right = 794.0

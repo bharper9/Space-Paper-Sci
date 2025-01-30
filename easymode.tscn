@@ -1,11 +1,11 @@
 [gd_scene load_steps=19 format=3 uid="uid://b6jkg76mdn2xu"]
 
 [ext_resource type="Script" path="res://easymode.gd" id="1_i122b"]
-[ext_resource type="Texture2D" uid="uid://cq01awdhydea" path="res://Art/space121png (1).png" id="2_1gu3u"]
-[ext_resource type="Texture2D" uid="uid://b75wnod884xah" path="res://Art/New Piskel-1.png.png" id="3_ad5kj"]
+[ext_resource type="Texture2D" uid="uid://cq01awdhydea" path="res://Art/Space Background.png" id="2_1gu3u"]
+[ext_resource type="Texture2D" uid="uid://b75wnod884xah" path="res://Art/Sword.png" id="3_ad5kj"]
 [ext_resource type="Texture2D" uid="uid://bnod550aq8hk7" path="res://Art/New Piskel-2.png.png" id="4_cpogr"]
 [ext_resource type="Texture2D" uid="uid://ymvo1lftrlhr" path="res://Art/New Piskel-3.png.png" id="5_yhd25"]
-[ext_resource type="Texture2D" uid="uid://btn8kvsufmt0c" path="res://Art/New Piskel-4.png.png" id="6_pyqgq"]
+[ext_resource type="Texture2D" uid="uid://btn8kvsufmt0c" path="res://Art/Sword off.png" id="6_pyqgq"]
 [ext_resource type="Texture2D" uid="uid://cbabfo3d0fe66" path="res://Art/New Piskel-5.png.png" id="7_rwaha"]
 [ext_resource type="Texture2D" uid="uid://dukj1eowb3wgh" path="res://Art/New Piskel-6.png.png" id="8_k32kk"]
 [ext_resource type="Texture2D" uid="uid://bmqbd8jg08m3e" path="res://Art/New Piskel-7.png.png" id="9_3wxa0"]
@@ -15,7 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://n8f53jp66m67" path="res://Art/New Piskel-11.png.png" id="13_vy0sv"]
 [ext_resource type="Texture2D" uid="uid://dkrnu5jtw5071" path="res://Art/New Piskel-12.png.png" id="14_u3n4m"]
 [ext_resource type="Texture2D" uid="uid://17bigpp2grm5" path="res://Art/SpaceMarine.png.png" id="15_io0pl"]
-[ext_resource type="Texture2D" uid="uid://d188650tgquu2" path="res://Art/SpaceEnemy1.png.png" id="16_mo5hh"]
+[ext_resource type="Texture2D" uid="uid://d188650tgquu2" path="res://Art/RedEnemy.png" id="16_mo5hh"]
 [ext_resource type="Texture2D" uid="uid://ceblqlecwiifi" path="res://Art/floating eye.png" id="17_yjqlp"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_3p8gb"]
@@ -70,7 +70,7 @@ animations = [{
 "speed": 6.0
 }]
 
-[node name="Node2D" type="Node2D"]
+[node name="easy mode" type="Node2D"]
 script = ExtResource("1_i122b")
 
 [node name="background" type="Sprite2D" parent="."]
