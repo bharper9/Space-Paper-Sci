@@ -1,0 +1,146 @@
+[gd_scene load_steps=19 format=3 uid="uid://b6jkg76mdn2xu"]
+
+[ext_resource type="Script" path="res://easymode.gd" id="1_i122b"]
+[ext_resource type="Texture2D" uid="uid://cq01awdhydea" path="res://Art/space121png (1).png" id="2_1gu3u"]
+[ext_resource type="Texture2D" uid="uid://b75wnod884xah" path="res://Art/New Piskel-1.png.png" id="3_ad5kj"]
+[ext_resource type="Texture2D" uid="uid://bnod550aq8hk7" path="res://Art/New Piskel-2.png.png" id="4_cpogr"]
+[ext_resource type="Texture2D" uid="uid://ymvo1lftrlhr" path="res://Art/New Piskel-3.png.png" id="5_yhd25"]
+[ext_resource type="Texture2D" uid="uid://btn8kvsufmt0c" path="res://Art/New Piskel-4.png.png" id="6_pyqgq"]
+[ext_resource type="Texture2D" uid="uid://cbabfo3d0fe66" path="res://Art/New Piskel-5.png.png" id="7_rwaha"]
+[ext_resource type="Texture2D" uid="uid://dukj1eowb3wgh" path="res://Art/New Piskel-6.png.png" id="8_k32kk"]
+[ext_resource type="Texture2D" uid="uid://bmqbd8jg08m3e" path="res://Art/New Piskel-7.png.png" id="9_3wxa0"]
+[ext_resource type="Texture2D" uid="uid://cdd134l3ukwaa" path="res://Art/New Piskel-8.png.png" id="10_gosdl"]
+[ext_resource type="Texture2D" uid="uid://bd8xoy05x1pnv" path="res://Art/New Piskel-9.png.png" id="11_4xgg1"]
+[ext_resource type="Texture2D" uid="uid://cgqag8e4rmxgp" path="res://Art/New Piskel-10.png.png" id="12_c56ya"]
+[ext_resource type="Texture2D" uid="uid://n8f53jp66m67" path="res://Art/New Piskel-11.png.png" id="13_vy0sv"]
+[ext_resource type="Texture2D" uid="uid://dkrnu5jtw5071" path="res://Art/New Piskel-12.png.png" id="14_u3n4m"]
+[ext_resource type="Texture2D" uid="uid://17bigpp2grm5" path="res://Art/SpaceMarine.png.png" id="15_io0pl"]
+[ext_resource type="Texture2D" uid="uid://d188650tgquu2" path="res://Art/SpaceEnemy1.png.png" id="16_mo5hh"]
+[ext_resource type="Texture2D" uid="uid://ceblqlecwiifi" path="res://Art/floating eye.png" id="17_yjqlp"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3p8gb"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_ad5kj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_cpogr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_yhd25")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_pyqgq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_rwaha")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_k32kk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_3wxa0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_gosdl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_4xgg1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_c56ya")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_vy0sv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_u3n4m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ad5kj")
+}],
+"loop": false,
+"name": &"sword",
+"speed": 6.0
+}]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_i122b")
+
+[node name="background" type="Sprite2D" parent="."]
+position = Vector2(571, 326.5)
+scale = Vector2(17.8125, 9.92188)
+texture = ExtResource("2_1gu3u")
+
+[node name="sword" type="AnimatedSprite2D" parent="."]
+position = Vector2(310, 210)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_3p8gb")
+animation = &"sword"
+
+[node name="space warrior" type="Sprite2D" parent="."]
+position = Vector2(361, 431)
+scale = Vector2(4, 4)
+texture = ExtResource("15_io0pl")
+
+[node name="triangle foe" type="Sprite2D" parent="."]
+position = Vector2(957, 384)
+scale = Vector2(5, 5)
+texture = ExtResource("16_mo5hh")
+
+[node name="floating eye" type="Sprite2D" parent="."]
+position = Vector2(936, 187)
+scale = Vector2(3, 3)
+texture = ExtResource("17_yjqlp")
+
+[node name="Player Health" type="Label" parent="."]
+offset_left = 252.0
+offset_top = 514.0
+offset_right = 273.0
+offset_bottom = 537.0
+scale = Vector2(5.16, 4.48)
+text = "50
+"
+
+[node name="Rock paper scisors" type="VBoxContainer" parent="."]
+offset_left = 62.0
+offset_top = 359.0
+offset_right = 200.0
+offset_bottom = 460.0
+
+[node name="Slash" type="Button" parent="Rock paper scisors"]
+layout_mode = 2
+text = "Slash"
+
+[node name="Bash" type="Button" parent="Rock paper scisors"]
+layout_mode = 2
+text = "Bash"
+
+[node name="Grab" type="Button" parent="Rock paper scisors"]
+layout_mode = 2
+text = "Grab"
+
+[node name="Button" type="Button" parent="Rock paper scisors"]
+layout_mode = 2
+text = "Exit
+"
+
+[node name="Enemy Health" type="Label" parent="."]
+offset_left = 906.0
+offset_top = 495.0
+offset_right = 927.0
+offset_bottom = 518.0
+scale = Vector2(5.16, 4.48)
+text = "50
+"
+
+[connection signal="pressed" from="Rock paper scisors/Slash" to="." method="_on_slash_pressed"]
+[connection signal="pressed" from="Rock paper scisors/Bash" to="." method="_on_bash_pressed"]
+[connection signal="pressed" from="Rock paper scisors/Grab" to="." method="_on_grab_pressed"]
+[connection signal="pressed" from="Rock paper scisors/Button" to="." method="_on_button_pressed"]

@@ -1,0 +1,60 @@
+[gd_scene load_steps=4 format=3 uid="uid://l5gq2k55npge"]
+
+[ext_resource type="Script" path="res://Control.gd" id="1_djcd8"]
+[ext_resource type="Texture2D" uid="uid://17bigpp2grm5" path="res://Art/SpaceMarine.png.png" id="2_3x61t"]
+[ext_resource type="Texture2D" uid="uid://cq01awdhydea" path="res://Art/space121png (1).png" id="2_i0pt8"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_djcd8")
+
+[node name="background" type="Sprite2D" parent="."]
+position = Vector2(571, 326.5)
+scale = Vector2(17.8125, 9.92188)
+texture = ExtResource("2_i0pt8")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+offset_left = 443.0
+offset_top = 196.0
+offset_right = 538.0
+offset_bottom = 262.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Hard mode" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Hard Mode"
+
+[node name="Easy mode" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Easy Mode"
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 0
+offset_left = 445.0
+offset_top = 68.0
+offset_right = 552.0
+offset_bottom = 91.0
+text = "Defend Earth "
+
+[node name="SpaceMarine_png" type="Sprite2D" parent="."]
+position = Vector2(333, 284)
+scale = Vector2(6, 6)
+texture = ExtResource("2_3x61t")
+
+[node name="SpaceMarine_png2" type="Sprite2D" parent="."]
+position = Vector2(798, 304)
+scale = Vector2(6, 6)
+texture = ExtResource("2_3x61t")
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Hard mode" to="." method="_on_hard_mode_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Hard mode" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Easy mode" to="." method="_on_easy_mode_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Easy mode" to="." method="_on_play_pressed"]
